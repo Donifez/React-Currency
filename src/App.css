@@ -6,15 +6,119 @@
   cursor: pointer;
 }
 body{
-  background:rgb(65, 180, 42);
+  background:#cad2d6;
 }
 .card{
-  background: rgb(199, 18, 18);
+  background: #ffffff;
 }
 .col-lg-2{
-  color:white;
+  color:black;
 }
 .container{
   position: relative;
   top:160px;
+}
+
+
+@media(max-width:1024px){
+  .container{
+    width:100%;
+  }
+  select{
+    margin-left: 17rem;
+    margin-top: -3rem;
+  }
+}
+
+@media(max-width:768px){
+  .container{
+    width:100%;
+  }
+  .card{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .form-control{
+    position:relative;
+    left: 7rem;
+  }
+  select{
+    position:relative;
+    right: 7rem;
+  }
+}
+
+@media(max-width:425px){
+  .container{
+    width:100%;
+  }
+  #All{
+    margin-top:1rem;
+  }
+  .card{
+  margin: 0 auto;
+  flex-wrap: wrap;
+  }
+  #change{
+  position:relative;
+  left: 1rem;
+  width:15rem;
+  } 
+  #move{
+    position:relative;
+    left: -1rem;
+    width:6rem;
+  }
+}
+
+@media(max-width:375px){
+  .container{
+    width:100%;
+  }
+  .card{
+  margin:0 auto;
+  }
+  h5,h2,p{
+   margin-left:-5rem;
+  }
+  #change{
+    position:relative;
+    left: -1rem;
+    width: 12rem;
+    } 
+    #move{
+      position:relative;
+      left: -5rem;
+      width:6rem;
+    }
+    .swap{
+    margin-left: -4rem;
+    }
+}
+
+@media(max-width:320px){
+  h1{
+    margin-left: 3.5rem;
+  }
+  .card{
+    margin-left:1rem;
+    width: 20rem;
+    }
+  h5,h2,p{
+    margin-left:-7rem;
+   }
+  #change{
+    position:relative;
+    left: -1rem;
+    width: 10rem;
+    } 
+    #move{
+      position:relative;
+      left: -7rem;
+      width:6rem;
+    }
+    .swap{
+      margin-left:-7rem;
+    }
+
 }

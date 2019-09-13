@@ -63,7 +63,7 @@ class Converter extends Component{
                  const {currencies, base, amount, convertTo, result, date} = this.state
         return(
            <div>
-           <div className="container">
+           <div className="container" id="all">
            <h1> Currency Converter </h1>
            
                <div className="row">
@@ -79,11 +79,11 @@ class Converter extends Component{
                         type="number"
                         value={amount}
                         onChange={this.handleInput}
-                        className="form-control form-control-lg mx-3"/>
+                        className="form-control  form-control-lg mx-3"  id="change"/>
                          <select name="base"
                          value={base}
                          onChange={this.handleSelect}
-                         className="form-control form-control-lg">
+                         className="form-control form-control-lg" id="move">
                              {currencies.map(currency => (<option key={currency}
                              value= {currency}> {currency} </option>))}
                          </select>
@@ -92,11 +92,11 @@ class Converter extends Component{
                         <form className="form-inline md-4">
                         <input disabled={true}
                         value={result===null?"calculating...":result}
-                         className="form-control form-control-lg mx-3"/>
+                         className="form-control  form-control-lg mx-3" id="change"/>
                         <select name="convertTo"
                          value={convertTo}
                          onChange={this.handleSelect}
-                         className="form-control form-control-lg">
+                         className="form-control form-control-lg" id="move">
                              {currencies.map(currency => (<option key={currency}
                              value= {currency}> {currency} </option>))}
                          </select>
